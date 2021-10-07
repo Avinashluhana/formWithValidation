@@ -1,0 +1,116 @@
+Q1: How do relative, fixed, absolute, and statically positions differ?
+
+A: Static:- This is the default value, all elements are in order as they appear in the document. 
+Relative:- The element is positioned relative to its normal position. 
+Absolute:- The element is positioned absolutely to its first positioned parent. 
+Fixed:- The element is positioned related to the browser window.
+
+Q2: What is the difference between variables created using let, var, and const?
+
+A: Var declarations are globally scoped or function scoped, var variables can be updated and re-declared within its scope.
+let are block scoped.let variables can be updated but not re-declared. 
+const are also block scoped. variables can neither be updated nor re-declared.
+
+Q3: What must be developed first, desktop or mobile view, and why?
+
+A: We always develop the desktop version first so that we can add brand personality and include all of the conversion assets and psychological drivers that position you as the trusted go-to authority, but we keep the mobile version in mind as we build the desktop version. Desktop users typically have more time and access to a quicker internet connection. They often have a goal in mind, such as solving a problem, and your website could be the destination. It should be designed to impress your visitors by having a memorable brand personality, as well as having all of the psychological drivers, designed with the right visual hierarchy to persuade entice to take action.
+
+Q4:What is the difference between an alert and an alert dialog? Also, walk us
+through the appropriate instances to use them.
+
+A: A lightweight variant of a Dialog is the AlertDialog. Because this is solely designed to deal with INFORMATIVE topics, complex interactions with the user are limited. Dialog, on the other hand, can do even more complicated tasks.
+
+Uses of alert Dialog:
+
+When I only want to inform the user about something.
+
+When a prompt such as Do you want to go back (Yes, No, Cancel) is required. The alert dialogue includes three buttons (positive, negative, and neutral, which are provided by default).
+
+When I need the user to provide a simple value (number, date, string...)
+
+Uses of an dailog:
+
+When I need to carry out a complicated process involving multiple buttons and widgets.
+
+Q5: What is the difference between a link, a generic button and a submit button?
+Walk us through the appropriate instances to use them.
+
+A: Buttons are used for: 
+	Receive keyboard focus by default
+	"Click" with the Space key
+	Submit form data to a server
+	Reset a form
+	Be disabled with the disabledattribute
+	Instruct a screen reader with the implicit buttonrole
+	Show :focus, :hover, :active, :disabled
+	With a little scripting, a button is the perfect element for:
+	  Opening a modal window
+	  Triggering a popup menu
+	  Toggling an interface
+	  Playing media content
+	  Inserting with JS if they only work with JS
+
+While links are used for: 
+
+Create hypertext, a network of online resources
+Navigate the user to a new page or view
+Change the URL
+Cause a browser redraw/refresh
+Support page jumps with internal hrefattributes
+Deep-link client-rendered applications
+Are focusable by default with the hrefattribute
+Register a click with the Enter key
+Have the implicit linkrole
+Can't be disabled like buttons but can be made inert with tabindex="-1"and aria-hidden="true"
+Allow opening in new windows (and back in the day, framesets)
+Show :link, :visited, :focus, :hover, :active
+
+And submit buttons are used for submitting the form data to a form-handler.
+
+Q6: React (how the component cycle works, if you have experience with Redux
+    Reducers/Actions, Webpack, code efficiency, optimization, and performance).
+    
+A: Many methods or "hooks" are provided by React for developers to call during the life-cycle of a component, allowing us to update the UI and application state. Knowing when to employ which of them is critical to fully grasping React's capabilities.
+
+The three phases are: Mounting, Updating, and Unmounting.
+
+1: Mounting:
+The term "mounting" refers to the process of inserting components into the Document Object Model (DOM).
+
+When mounting a component, React calls the following four built-in functions in this order:
+
+constructor()
+getDerivedStateFromProps()
+render()
+componentDidMount()
+The render() method is essential and will be called at all times; the others are optional and will be invoked only if they are defined.
+
+2: Updating
+When a component is updated, the lifecycle moves on to the next step.
+
+When the state or props of a component change, the component is updated.
+
+When a component is changed, React calls the following five built-in methods in this order:
+
+getDerivedStateFromProps()
+shouldComponentUpdate()
+render()
+getSnapshotBeforeUpdate()
+componentDidUpdate()
+
+3: Unmounting
+
+The component gets removed from the DOM, or unmounted as React likes to call it, in the following phase of the lifecycle.
+
+When a component is unmounted, only one built-in method in React is called:
+
+componentWillUnmount()
+
+Redux:
+Redux is a JavaScript library for managing and centralising application state that is open-source.
+
+Reducer: 
+A reducer in Redux is a pure function that accepts an action and the application's previous state and returns the new state.
+
+Actions: 
+Actions are the only source of information for the store
